@@ -6,8 +6,8 @@ const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
     validateInputs();
+    writeToLocalStorage();
 });
 
 const setError = (element, message) => {
@@ -70,3 +70,15 @@ const validateInputs = () => {
     }
 
 };
+
+function writeToLocalStorage(){
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+
+localStorage.setItem("username",usernameValue);
+localStorage.setItem("email",emailValue);
+localStorage.setItem("password",passwordValue);
+
+};
+
