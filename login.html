@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online food ordering application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="loginstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box0">
+        <i class="fa fa-times" aria-hidden="true" id="cross"></i>
+      </div>
+      <div class="box1">
+        <p>LOGIN</p>
+      </div>
+      <div class="box2">
+        <form action="login.html" id="loginform" method="post">
+          <div>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" id="username" placeholder="enter email" />
+          </div>
+          <div>
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" id="password" placeholder="enter password"/>
+          </div>
+          <div>
+            <p>Forgot password</p>
+            <!-- <input type="submit" value="login" id="submit" onclick="validate()"/> -->
+            <input type="submit" value="login" id="submit"/>
+
+          </div>
+        </form>
+      </div>
+      <div class="box3">
+        <p>Create New Account</p>
+        <button id="signupbtn">Signup</button>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
